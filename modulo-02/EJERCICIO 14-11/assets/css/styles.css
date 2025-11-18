@@ -1,0 +1,13 @@
+body{
+    background-color: lightblue
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2{
+    color: red;
+}
+img{
+    width: 400px;
+    height: 300px;
+    display:block;
+    margin: auto;
+}
