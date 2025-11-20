@@ -1,13 +1,104 @@
-body{
-    background-color: lightblue
-    font-family: Arial, Helvetica, sans-serif;
+/* ========== DISEÑO MOBILE FIRST APILADO (por defecto) ========== */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
-h1, h2{
-    color: red;
+
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
-img{
-    width: 400px;
-    height: 300px;
-    display:block;
-    margin: auto;
+
+/* Bloques principales del grid */
+.imagen-titulo,
+.aspectos,
+.contacto {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
+
+.imagen-titulo img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto 15px auto;
+    display: block;
+    border-radius: 7px;
+}
+
+.imagen-titulo h1, .aspectos h2, .contacto h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.imagen-titulo p {
+    margin-bottom: 0;
+    color: #222;
+}
+
+/* Listas */
+ul {
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+
+/* ========== MEDIA QUERY: TABLET (2 columnas) ========== */
+@media (min-width: 768px) {
+    .contenedor-principal {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto 1fr;
+    }
+    .imagen-titulo {
+        grid-column: 1 / span 2;
+    }
+    .aspectos {
+        grid-column: 1;
+    }
+    .contacto {
+        grid-column: 2;
+    }
+}
+
+/* ========== MEDIA QUERY: DESKTOP (3 columnas) ========== */
+@media (min-width: 1024px) {
+    .contenedor-principal {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    .imagen-titulo {
+        grid-column: 1 / 2;
+    }
+    .aspectos {
+        grid-column: 2 / 3;
+    }
+    .contacto {
+        grid-column: 3 / 4;
+    }
+}
+
