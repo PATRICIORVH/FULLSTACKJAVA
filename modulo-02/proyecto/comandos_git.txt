@@ -1,0 +1,19 @@
+Comando: git --version
+Definición breve: Muestra la versión instalada de Git.
+Ejemplo de uso: git --version
+
+Comando: git init
+Definición breve: Inicializa un repositorio Git en la carpeta actual.
+Ejemplo de uso: git init
+
+Comando: git add
+Definición breve: Añade archivos al área de preparación (staging).
+Ejemplo de uso: git add .   # añade todos los archivos
+
+Comando: git commit
+Definición breve: Guarda los cambios con un mensaje descriptivo.
+Ejemplo de uso: git commit -m "Primer commit"
+
+Comando: git status
+Definición breve: Muestra el estado del repositorio.
+Ejemplo de uso: git status
