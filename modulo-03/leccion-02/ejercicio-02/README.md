@@ -9,7 +9,11 @@ El resultado final se muestra en la página con `document.write()`, en una venta
 ## Capturas de pantalla
 
 ![Promedio de notas 1](./img/Promedio de notas 1.png)
+
 ![Promedio de notas 2](./img/Promedio de notas 2.png)
+
 ![Promedio de notas 3](./img/Promedio de notas 3.png)
+
 ![Promedio de notas 4](./img/Promedio de notas 4.png)
+
 ![Promedio de notas 5](./img/Promedio de notas 5.png)
