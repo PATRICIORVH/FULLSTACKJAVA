@@ -1,0 +1,19 @@
+/* Igualar tamaño de todas las imágenes en tarjetas */
+.card-img-top {
+  width: 100%;
+  height: 220px;     /* Ajusta el alto según el diseño que más te guste */
+  object-fit: cover;
+}
+
+/* Igualar altura de todas las tarjetas y mantener alineado contenido */
+.card {
+  min-height: 370px;            /* Puedes ajustar este valor si quieres más o menos alto */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Ajusta el botón si lo quieres más ancho */
+.card .btn {
+  width: 100%;
+}
