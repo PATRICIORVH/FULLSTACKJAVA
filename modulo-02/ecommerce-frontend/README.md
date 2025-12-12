@@ -1,4 +1,4 @@
-# M2–M3 — E-commerce Frontend con Carrito y Autenticación
+# Módulo02–Módulo03 — E-commerce Frontend con Carrito y Autenticación
 
 ## Descripción
 
@@ -49,3 +49,8 @@ Los textos en verde dentro del código HTML corresponden a comentarios que utili
 - `app.js`: lógica de catálogo, carrito y autenticación.
 
 ## Capturas
+<img width="1365" height="683" alt="Captura 11" src="https://github.com/user-attachments/assets/e61c06fb-0ae6-4ef0-b146-1b543023eea3" />
+<img width="1365" height="680" alt="Captura 22" src="https://github.com/user-attachments/assets/4864c98e-c8f8-41c8-9c48-a72fe5ee1521" />
+<img width="1365" height="678" alt="Captura 33" src="https://github.com/user-attachments/assets/f059cf0a-6593-4b92-bd5a-d0b41b549d5a" />
+<img width="1365" height="678" alt="Captura 44" src="https://github.com/user-attachments/assets/cf11728d-f042-4af6-b68d-0d2ddb9e3521" />
+<img width="1365" height="676" alt="Captura 55" src="https://github.com/user-attachments/assets/f5f1a865-fd7e-47a2-94be-d00f40cae8f3" />
