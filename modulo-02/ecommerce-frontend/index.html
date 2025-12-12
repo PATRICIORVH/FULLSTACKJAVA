@@ -20,6 +20,13 @@
           <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
         </ul>
         <a class="btn btn-outline-primary" href="#">Carro (0)</a>
+        <span class="ms-3 me-3" id="estadoUsuario">No logueado</span>
+          <button class="btn btn-outline-secondary me-2" onclick="mostrarModal('login')">
+          Iniciar sesión
+          </button>
+        <button class="btn btn-outline-success" onclick="mostrarModal('registro')">
+        Registrarse
+        </button>
       </div>
     </div>
   </nav>
@@ -79,12 +86,80 @@
     </div>
   </div>
 
+  <!-- Carrito de compras -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8">
+      <h3>Carrito de compras (<span id="cantidadItems">0</span>)</h3>
+    </div>
+    <div class="col-md-4">
+      <label for="codigoDescuento" class="form-label">Código de descuento</label>
+      <div class="input-group">
+        <input type="text" id="codigoDescuento" class="form-control" placeholder="DESC15">
+        <button class="btn btn-warning" onclick="aplicarCodigoDescuento()">Aplicar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-responsive mt-3">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody id="tbodyCarrito">
+        <tr>
+          <td colspan="3" class="text-center">Carrito vacío</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2" class="text-end"><strong>Total:</strong></td>
+          <td id="totalCarrito">$ 0</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+
+<!-- Modal Autenticación -->
+<div class="modal fade" id="modalAuth" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalAuthTitle">Iniciar sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="usuarioInput" class="form-label">Usuario</label>
+          <input type="text" class="form-control" id="usuarioInput">
+        </div>
+        <div class="mb-3">
+          <label for="passwordInput" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="passwordInput">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" onclick="handleSubmitAuth()">Ingresar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- Footer -->
-  <footer class="bg-light text-center p-3 mt-5">
-    © 2025 SneakerSport | Todos los derechos reservados
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="bg-light text-center p-3 mt-5">
+  <p>© 2025 SneakerSport | Todos los derechos reservados</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./app.js"></script>
 </body>
 </html>
+
 
 
